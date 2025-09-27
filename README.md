@@ -61,8 +61,8 @@ target_link_libraries(MyApp PRIVATE Doku)
 
 int main() {
   std::string s = "  hello  ";
-  doku::strutil::trim(s);  // from ::strutil, exposed as doku::strutil
-  doku::logger::info("ok");   // from ::logger, exposed as doku::logger
+  doku::strutil::trim(s);             // from ::strutil, exposed as doku::strutil
+  doku::logger::Logger::info("ok");   // from ::logger, exposed as doku::logger
 }
 ```
 
@@ -75,12 +75,12 @@ Doku/
     Doku/
       StringUtils.hpp   # thin forwarder + namespace alias only
       Logger.hpp
+      ...
   external/
     StringUtils/        # git submodule (poicurr/StringUtils)
-    Logger/             # git submodule (poicurr/Logger)
+    Logger/
     ...
 ```
-
 
 ## License
 
