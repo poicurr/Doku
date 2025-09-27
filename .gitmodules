@@ -1,0 +1,6 @@
+[submodule "external/StringUtils"]
+	path = external/StringUtils
+	url = https://github.com/poicurr/StringUtils.git
+[submodule "external/Logger"]
+	path = external/Logger
+	url = https://github.com/poicurr/Logger.git
